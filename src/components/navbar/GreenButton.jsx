@@ -1,11 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import { IoMdArrowForward } from "react-icons/io";
 
-const GreenButton = ({ bgcolor, s, text }) => {
+const GreenButton = ({ bgcolor, s, text, hidden }) => {
   return (
     <div>
-      <div className="hidden sm:flex flex-row items-center group">
+      <div
+        className={`${
+          hidden ? "hidden md:inline-flex" : "inline-flex" // inline flex or hidden aik saath issue tha
+        } items-center group`}
+      >
         <a
           href="#"
           className={`text-black text-sm font-bold rounded-3xl ${bgcolor} py-2 px-6 flex items-center`}

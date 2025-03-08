@@ -61,7 +61,7 @@ const Navbar = () => {
       <motion.div
         transition={{ type: "spring", stiffness: 100, damping: 15 }}
       >
-        <GreenButton bgcolor="bg-lime-300" s={36} text="Contact us" />
+        <GreenButton bgcolor="bg-lime-300" s={36} text="Contact us" hidden={"hidden"} />
       </motion.div>
 
       {/* Mobile Menu Button */}

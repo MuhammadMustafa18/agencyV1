@@ -27,7 +27,11 @@ const Hero = () => {
           A web design and <br />
           branding agency{" "}
         </p>
-        <GreenButton bgcolor="bg-gray-900 text-white" s={36} text="Projects" />
+        <GreenButton
+          bgcolor="bg-zinc-900 text-white"
+          s={36}
+          text="Projects"
+        />
       </div>
     </div>
   );

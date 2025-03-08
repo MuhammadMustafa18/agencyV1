@@ -5,9 +5,9 @@ import hero from "../../assets/hero.mp4";
 
 const Description = () => {
   return (
-    <div className="flex flex-col sm:flex-row items-start space-x-6 p-18">
+    <div className="flex flex-col sm:flex-row items-start space-x-6 px-5 sm:px-18 py-18">
       {/* Heading */}
-      <div className="flex items-center min-w-1/4 text-md text-white">
+      <div className="flex items-center md:min-w-1/4 text-md text-white">
         <LuDot size={42} />
         <h2 className=" ">Who are we</h2>
       </div>
