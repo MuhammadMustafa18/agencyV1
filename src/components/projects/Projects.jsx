@@ -47,7 +47,6 @@ const ProjectsSection = () => {
       <h2 className="text-6xl font-bold text-center text-white mb-8">
         Our Work
       </h2>
-
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {projects.map((project) => (
           <div key={project.id} className="rounded-2xl shadow-lg">
@@ -88,6 +87,16 @@ const ProjectsSection = () => {
             </a>
           </div>
         ))}
+      </div>
+      <div className="mt-4 flex flex-col items-center">
+        <h2 className="text-5xl font-bold text-center text-white mb-4">
+          Like what <br />
+          you see?
+        </h2>
+       
+
+        <GreenButton bgcolor="bg-lime-300" s={36} text="Contact us" />
+        
       </div>
     </section>
   );

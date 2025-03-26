@@ -5,7 +5,7 @@ import GreenButton from "../navbar/GreenButton";
 
 const Hero = () => {
   return (
-    <div className="relative w-full h-screen px-4 sm:px-20 pt-10 sm:pt-40 overflow-hidden">
+    <div className="relative w-full h-screen px-4 sm:px-20 pt-20 sm:pt-20 overflow-hidden">
       {/* Background Video */}
       <video
         className="object-cover w-full h-full rounded-3xl"
