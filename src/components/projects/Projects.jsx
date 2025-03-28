@@ -44,9 +44,11 @@ const projects = [
 const ProjectsSection = () => {
   return (
     <section className="max-w-full mx-0 md:mx-12 py-12 px-6">
-      <h2 className="text-6xl font-bold text-center text-white mb-8">
-        Our Work
-      </h2>
+     <div className='flex flex-row text-white mb-6 items-center'>
+     
+             <LuDot size={42}/>
+             <div className="text-xl">Our Work</div>
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {projects.map((project) => (
           <div key={project.id} className="rounded-2xl shadow-lg">
