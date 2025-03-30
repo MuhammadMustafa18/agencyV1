@@ -7,6 +7,7 @@ import Hero from './components/hero/Hero'
 import Description from './components/description/Description'
 import ProjectsSection from './components/projects/Projects'
 import Services from './components/services/Services'
+import Footer from './components/Footer/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,13 +15,12 @@ function App() {
   return (
     <div className="bg-black font-primary">
       <Navbar />
-      <div>
-        
-      </div>
+      <div></div>
       <Hero />
-      <Description/>
-      <ProjectsSection/>
-      <Services/>
+      <Description />
+      <ProjectsSection />
+      <Services />
+      <Footer/>
     </div>
   );
 }
