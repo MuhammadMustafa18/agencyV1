@@ -8,6 +8,9 @@ import Description from './components/description/Description'
 import ProjectsSection from './components/projects/Projects'
 import Services from './components/services/Services'
 import Footer from './components/Footer/Footer'
+import ServicesOverview from './components/services/ServicesOverview'
+import Appointment from './components/appointment/Appointment'
+import AppBox from "./components/appointment/AppBox";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,10 +20,13 @@ function App() {
       <Navbar />
       <div></div>
       <Hero />
+      <ServicesOverview />
       <Description />
-      <ProjectsSection />
       <Services />
-      <Footer/>
+      <ProjectsSection />
+      {/* <Appointment /> */}
+      <AppBox />
+      <Footer />
     </div>
   );
 }

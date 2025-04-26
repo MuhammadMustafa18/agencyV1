@@ -5,34 +5,16 @@ import GreenButton from "../navbar/GreenButton";
 
 const Hero = () => {
   return (
-    <div className="relative w-full h-screen px-4 sm:px-20 pt-20 sm:pt-20 overflow-hidden">
+    <div className="w-full h-screen px-4 sm:px-20 pt-28 sm:pt-20">
       {/* Background Video */}
-      <video
-        className="object-cover w-full h-full rounded-3xl"
-        autoPlay
-        loop
-        muted
-      >
-        <source src={hero} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <div className="max-w-[70%] sm:max-w-[90%] mx-auto text-5xl sm:text-8xl text-white text-center font-extrabold mt-10 sm:mt-20">
+        Simple, smart websites for growing businesses.
+      </div>
+      <div className="text-lg sm:text-xl text-white text-center mt-4 sm:mt-8">
+        Built for clarity, speed, and growth.
+      </div>
 
       {/* Overlay */}
-      <div className="absolute top-20 left-0 sm:left-15 text-white p-6 bg-black bg-opacity-75 rounded-b-3xl">
-        <div className="flex flex-row items-center tracking-tight">
-          <LuDot size={42} />
-          <h1 className="">Welcome to Our Website</h1>
-        </div>
-        <p className="text-3xl sm:text-7xl font-bold mt-2 mb-6">
-          A web design and <br />
-          branding agency{" "}
-        </p>
-        <GreenButton
-          bgcolor="bg-zinc-900 text-white"
-          s={36}
-          text="Projects"
-        />
-      </div>
     </div>
   );
 };

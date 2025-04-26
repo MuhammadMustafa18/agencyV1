@@ -10,26 +10,27 @@ const servicesData = [
     image: img,
   },
   {
-    id: 1,
-    title: "Landing Page Website",
-    image: img,
-  },
-  {
-    id: 1,
-    title: "Event or Booking Website",
-    image: img,
-  },
-  {
     id: 2,
-    title: "Ecommerce Website",
+    title: "E-commerce Website",
     image: img,
   },
   {
     id: 3,
-    title: "Shopify",
+    title: "Portfolio Website",
+    image: img,
+  },
+  {
+    id: 4,
+    title: "Real Estate Website",
+    image: img,
+  },
+  {
+    id: 5,
+    title: "Booking / Appointment Website",
     image: img,
   },
 ];
+
 const Each = () => {
  return (
    <div>
@@ -58,16 +59,16 @@ const Each = () => {
 };
 const Services = () => {
   return (
-    <div className="text-white max-w-full px-6 sm:px-16 py-6 bg-zinc-900">
-      <div className="flex flex-col sm:flex-row items-center space-x-6 my-20">
-        <div className="flex flex-row sm:min-w-1/4 text-white mb-6 items-center">
+    <div className="text-white  px-6 sm:px-16 py-6 bg-black">
+      <div className="flex flex-col sm:flex-row items-start space-x-6 my-20">
+        <div className="flex items-center md:min-w-1/4 text-md text-white">
           <LuDot size={42} />
-          <div className="text-xl">Services</div>
+          <h2 className="text-3xl font-extrabold">Popular Services</h2>
         </div>
         <div className="sm:min-w-3/4">
           <div className="text-2xl font-bold">
-            We are a digital marketing agency with expertise, and we’re on a br
-            mission to help you take the next step in your business.
+            Trusted by businesses like yours, these popular services make it
+            easy to build a strong online presence
           </div>
 
           <GreenButton
