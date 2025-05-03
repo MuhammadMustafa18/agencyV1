@@ -17,17 +17,17 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="bg-black font-primary">
+    <div className="bg-zinc-900 font-primary">
       <Navbar />
-      
+
       <Hero />
       <Services2 />
       <ServicesOverview />
 
       <Description />
-      
+
       <ProjectsSection />
-      
+
       <AppBox />
       <Footer />
     </div>

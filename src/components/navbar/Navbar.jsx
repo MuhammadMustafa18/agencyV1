@@ -14,7 +14,7 @@ const Navbar = () => {
   useEffect(() => {
     return smoothScrollY.on("change", (latest) => {
       if (latest > 50) {
-        setNavBg("bg-gray-900/50 backdrop-blur-xl"); // Blurry background
+        setNavBg("bg-zinc-900/50 backdrop-blur-xl"); // Blurry background
         setLogoTranslate(100); // Move logo right
         setButtonTranslate(-100); // Move button left
         setNavWidth("70%"); // Decrease width
@@ -33,7 +33,7 @@ const Navbar = () => {
     <motion.nav
       className={`fixed top-4 left-1/2 transform -translate-x-1/2 flex items-center justify-between py-4 px-6 text-white z-50 transition-all duration-300 ${navBg}`}
       animate={{ width: navWidth, borderRadius: navRadius }}
-      transition={{  }}
+      transition={{}}
     >
       {/* Logo */}
       <motion.div
@@ -58,10 +58,10 @@ const Navbar = () => {
       </div>
 
       {/* Contact Button */}
-      <motion.div
-        transition={{ type: "spring", stiffness: 100, damping: 15 }}
-      >
-        <GreenButton bgcolor="bg-lime-300" s={36} text="Contact us" hidden={"hidden"} />
+      <motion.div transition={{ type: "spring", stiffness: 100, damping: 15 }}>
+        <button className="bg-gradient-to-r font-display font-semibold from-yellow-500 to-orange-600 py-2 px-5 rounded-full text-zinc-900  hover:from-zinc-900 hover:to-zinc-900 hover:text-white border-amber-600 border-2 transition-all duration-300 ease-in-out">
+          Contact us
+        </button>
       </motion.div>
 
       {/* Mobile Menu Button */}
