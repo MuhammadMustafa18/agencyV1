@@ -19,15 +19,15 @@ function App() {
   return (
     <div className="bg-black font-primary">
       <Navbar />
-      <div></div>
+      
       <Hero />
       <Services2 />
       <ServicesOverview />
 
       <Description />
-      <Services />
+      
       <ProjectsSection />
-      {/* <Appointment /> */}
+      
       <AppBox />
       <Footer />
     </div>
