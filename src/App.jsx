@@ -11,6 +11,7 @@ import Footer from './components/Footer/Footer'
 import ServicesOverview from './components/services/ServicesOverview'
 import Appointment from './components/appointment/Appointment'
 import AppBox from "./components/appointment/AppBox";
+import Services2 from './components/services/Services2'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,7 +21,9 @@ function App() {
       <Navbar />
       <div></div>
       <Hero />
+      <Services2 />
       <ServicesOverview />
+
       <Description />
       <Services />
       <ProjectsSection />
