@@ -20,6 +20,7 @@ const FeaturesData = [
       "Want to run ads? Apply for business loans? Partner with brands? - They Will almost always ask for your website as proof you're legit and serious.",
     ],
     image: FaWhatsapp,
+    gradient: "from-red-500 to-green-500",
   },
   {
     name: "MOBILE OPTIMIZED",
@@ -29,6 +30,7 @@ const FeaturesData = [
       "Touch-friendly navigation and buttons",
     ],
     image: FaMobile,
+    gradient: "from-indigo-500 to-pink-500",
   },
   {
     name: "Basic SEO & Google My Business Link",
@@ -38,6 +40,7 @@ const FeaturesData = [
       "Brings new customers, not just referrals or repeat ones",
     ],
     image: FaSearchengin,
+    gradient: "from-cyan-400 to-teal-500",
   },
   {
     name: "Clear Calls to Action (CTAs)",
@@ -47,6 +50,7 @@ const FeaturesData = [
       "Encourages conversions (calls, messages, bookings)",
     ],
     image: TbUrgent,
+    gradient: "from-orange-400 to-red-500",
   },
   {
     name: "Product Catalog",
@@ -56,6 +60,7 @@ const FeaturesData = [
       "Visual proof of quality helps close deals faster than a WhatsApp chat",
     ],
     image: AiFillProduct,
+    gradient: "from-pink-500 to-orange-400",
   },
 ];
 
@@ -75,7 +80,9 @@ const Features = () => {
               index % 2 === 1 ? "sm:flex-row-reverse" : ""
             } my-7 items-center`}
           >
-            <div className="w-full h-[450px] sm:w-[47%] flex justify-center items-center overflow-hidden bg-gradient-to-l from-yellow-500 to-orange-500 rounded-2xl">
+            <div
+              className={`w-full h-[450px] sm:w-[47%] flex justify-center items-center overflow-hidden bg-gradient-to-l ${featureData.gradient} rounded-2xl`}
+            >
               <div className="flex flex-col w-70 items-center hover:bg-white shadow-2xl transition-colors justify-center bg-amber-50/70 rounded-2xl py-5 backdrop-blur-lg">
                 <div className="w-[25%] text-6xl">
                   <featureData.image />
