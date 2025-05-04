@@ -17,7 +17,7 @@ const projects = [
     title: "Project Two",
     when: 2025,
     description: "A full-stack web application with a responsive UI.",
-    image: "https://via.placeholder.com/400",
+    image: img,
     tags: ["Full Stack", "React", "Node.js"],
     link: "#",
   },
@@ -26,7 +26,7 @@ const projects = [
     title: "Project Three",
     when: 2025,
     description: "An e-commerce platform with real-time database updates.",
-    image: "https://via.placeholder.com/400",
+    image: img,
     tags: ["E-commerce", "MongoDB", "Express"],
     link: "#",
   },
@@ -35,7 +35,7 @@ const projects = [
     title: "Project Four",
     when: 2025,
     description: "A portfolio website with smooth animations.",
-    image: "https://via.placeholder.com/400",
+    image: img,
     tags: ["Portfolio", "Animations", "GSAP"],
     link: "#",
   },
@@ -93,15 +93,14 @@ const ProjectsSection = () => {
         ))}
       </div>
       <div className="mt-4 flex flex-col items-center">
-        <h2 className="text-5xl font-bold text-center text-white my-3">
+        <h2 className="text-5xl font-bold text-center text-white mt-20 mb-10">
           Have something unique in mind?
         </h2>
-        Book a meeting in just a few clicks with Google Calendar. No sign-ups
-        needed, automatic reminders, and instant calendar updates.
+        
         <button className="text-white py-3 rounded-full border-2 text-xl px-8 hover:bg-white hover:text-zinc-900 hover:scale-95 hover:font-bold transition duration-300">
           Book a meeting
         </button>
-        <h2 className="text-sm font-bold text-center text-white my-7">
+        <h2 className="text-sm font-bold text-center  text-zinc-400 my-7">
           Book a meeting in just a few clicks with Google Calendar. <br />No sign-ups
           needed, automatic reminders, and instant calendar updates.
         </h2>

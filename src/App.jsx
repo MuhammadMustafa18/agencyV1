@@ -12,6 +12,7 @@ import ServicesOverview from './components/services/ServicesOverview'
 import Appointment from './components/appointment/Appointment'
 import AppBox from "./components/appointment/AppBox";
 import Services2 from './components/services/Services2'
+import Features from './components/services/Features'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,15 +20,12 @@ function App() {
   return (
     <div className="bg-zinc-900 font-primary">
       <Navbar />
-
       <Hero />
       <Services2 />
       <ServicesOverview />
-
-      <Description />
-
+      <Features/>
+      
       <ProjectsSection />
-
       <AppBox />
       <Footer />
     </div>

@@ -52,7 +52,7 @@ const websites = [
 ];
 const Services2 = () => {
   return (
-    <div className='flex justify-center flex-col'>
+    <div className='flex justify-center flex-col my-25'>
       <div className="w-full justify-items-center text-white sm:px-20 px-5 grid sm:grid-cols-2 grid-cols-1 gap-5">
         <div className="border-r-2 border-r-zinc-800">
           <h1 className="text-lg mb-3 font-mono">Websites</h1>
