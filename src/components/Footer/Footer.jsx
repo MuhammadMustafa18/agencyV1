@@ -15,7 +15,7 @@ const Footer = () => {
           Do you like <br />
           what you see?
         </div>
-          <div className="inline-flex w-auto mt-5 text-xs sm:text-xl py-2 px-5 sm:px-5 rounded-full font-display font-semibold text-white border-amber-600 border-2 transition-all duration-300 ease-in-out hover:bg-gradient-to-r from-zinc-900 to-zinc-900 hover:from-yellow-500 hover:to-orange-600 hover:text-zinc-900 items-center gap-2">
+          <div className="inline-flex w-auto mt-5 text-xs sm:text-xl py-2 px-5 sm:px-5 rounded-full font-primary font-semibold text-white border-amber-600 border-2 transition-all duration-300 ease-in-out hover:bg-gradient-to-r from-zinc-900 to-zinc-900 hover:from-yellow-500 hover:to-orange-600 hover:text-zinc-900 items-center gap-2">
             <TiArrowForward/> Start a Project
           </div>
         </div>
