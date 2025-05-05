@@ -23,7 +23,7 @@ const ServicesOverview = () => {
         </div>
 
         {/* Service Tags with icons */}
-        <div className="absolute sm:top-[320px] top-[335px] left-[50%] -translate-x-1/2  text-xs sm:text-xl py-2 px-5 rounded-full font-display font-semibold text-white border-amber-600 border-2 transition-all duration-300 ease-in-out hover:bg-gradient-to-r from-zinc-900 to-zinc-900 hover:from-yellow-500 hover:to-orange-600 hover:text-zinc-900 flex items-center gap-2">
+        <div className="absolute sm:top-[320px] top-[335px] left-[50%] -translate-x-1/2  text-[10px] sm:text-xl py-2 px-5 rounded-full font-display font-semibold text-white border-amber-600 border-2 transition-all duration-300 ease-in-out hover:bg-gradient-to-r from-zinc-900 to-zinc-900 hover:from-yellow-500 hover:to-orange-600 hover:text-zinc-900 flex items-center gap-2">
           <FaGlobe /> Web Design
         </div>
         <div className="absolute sm:top-[220px] top-[280px] left-[5%] sm:left-[20%]  text-xs sm:text-xl py-2 px-5 rounded-full font-display font-semibold text-white border-amber-600 border-2 transition-all duration-300 ease-in-out hover:bg-gradient-to-r from-zinc-900 to-zinc-900 hover:from-yellow-500 hover:to-orange-600 hover:text-zinc-900 flex items-center gap-2">
