@@ -14,8 +14,8 @@ const ServicesOverview = () => {
     <div>
       <div className="relative my-10 sm:my-50 h-[700px] flex items-center justify-center">
         {/* Circle elements */}
-        <div className="absolute sm:w-180 sm:h-180 w-90 h-90 bg-zinc-900 rounded-full border-dotted border-2 border-zinc-600 text-white mx-auto"></div>
-        <div className="absolute sm:w-80 sm:h-80 w-40 h-40 bg-zinc-900 rounded-full border-2 border-dotted border-zinc-600 text-white mx-auto"></div>
+        <div className="absolute sm:w-180 sm:h-180 w-70 h-70 bg-zinc-900 rounded-full border-dotted border-2 border-zinc-600 text-white mx-auto"></div>
+        <div className="absolute sm:w-80 sm:h-80 w-35 h-35 bg-zinc-900 rounded-full border-2 border-dotted border-zinc-600 text-white mx-auto"></div>
 
         {/* Title */}
         <div className="absolute top-[60px] text-4xl text-white text-center font-bold">
