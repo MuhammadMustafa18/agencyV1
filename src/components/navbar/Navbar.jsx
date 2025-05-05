@@ -18,7 +18,7 @@ const Navbar = () => {
         setNavBg("bg-zinc-900/50 backdrop-blur-xl"); // Blurry background
         setLogoTranslate(100); // Move logo right
         setButtonTranslate(-100); // Move button left
-        setNavWidth("70%"); // Decrease width
+        setNavWidth("85%"); // Decrease width
         setNavRadius("50px"); // Rounded corners
       } else {
         setNavBg("bg-zinc-900");

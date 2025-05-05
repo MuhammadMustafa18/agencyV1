@@ -68,8 +68,8 @@ const FeaturesData = [
 
 const Features = () => {
   return (
-    <div className="text-black bg-white px-5 sm:px-20 py-20">
-      <div className="font-mono text-3xl sm:text-4xl font-bold ">
+    <div className="text-black bg-white px-5 sm:px-20 py-10">
+      <div className="font-mono text-3xl sm:text-4xl font-bold py-10">
         COMMON USE CASES
       </div>
       <div className="">
@@ -78,7 +78,7 @@ const Features = () => {
             key={index}
             className={`flex flex-col sm:flex-row gap-10 sm:space-y-10 items-start ${
               index % 2 === 1 ? "sm:flex-row-reverse" : ""
-            } my-7 items-center`}
+            } mb-7 items-center`}
           >
             <div
               className={`w-full h-[450px] sm:w-[47%] flex justify-center items-center overflow-hidden bg-gradient-to-l ${featureData.gradient} rounded-2xl`}
@@ -94,7 +94,7 @@ const Features = () => {
               </div>
             </div>
             <div className="flex flex-col sm:w-[50%]">
-              <div className="font-mono font-bold sm:font-medium text-xl sm:text-xl px-5 py-4">
+              <div className="font-mono font-bold sm:font-medium text-xl sm:text-xl px-5 py-1 sm:py-4">
                 {/* heading */}
                 {featureData.name}
               </div>
@@ -104,7 +104,7 @@ const Features = () => {
                 ))}
               </ul>
               <div className="w-full mt-3 px-5">
-                <div className="inline-flex text-sm sm:text-xl py-2 px-5 rounded-full font-display font-semibold text-white border-amber-600 border-2 transition-all duration-500 ease-in-out hover:bg-gradient-to-r bg-gradient-to-r from-zinc-800 to-zinc-800 hover:from-yellow-500 hover:to-orange-600 hover:text-zinc-900 items-center gap-2">
+                <div className="inline-flex text-sm sm:text-md py-2 px-5 rounded-full font-display font-semibold text-white hover:border-amber-600 border-2 transition-all duration-500 ease-in-out hover:bg-gradient-to-r bg-gradient-to-r from-zinc-800 to-zinc-800 hover:from-yellow-500 hover:to-orange-600 hover:text-zinc-900 items-center gap-2">
                   <FaMagic /> View all benefits
                 </div>
               </div>
