@@ -23,28 +23,28 @@ const ServicesOverview = () => {
         </div>
 
         {/* Service Tags with icons */}
-        <div className="absolute sm:top-[320px] top-[335px] left-[50%] -translate-x-1/2  text-[10px] sm:text-xl py-2 px-5 rounded-full font-display font-semibold text-white border-amber-600 border-2 transition-all duration-300 ease-in-out hover:bg-gradient-to-r from-zinc-900 to-zinc-900 hover:from-yellow-500 hover:to-orange-600 hover:text-zinc-900 flex items-center gap-2">
+        <div className="absolute sm:top-[320px] top-[335px] left-[50%] -translate-x-1/2  text-[10px] sm:text-xl py-2 px-5 rounded-full font-semibold text-white border-amber-600 border-2 transition-all duration-300 ease-in-out hover:bg-gradient-to-r from-zinc-900 to-zinc-900 hover:from-yellow-500 hover:to-orange-600 hover:text-zinc-900 flex items-center gap-2">
           <FaGlobe /> Web Design
         </div>
-        <div className="absolute sm:top-[220px] top-[280px] left-[5%] sm:left-[20%]  text-[9px] sm:text-xl py-2 px-5 rounded-full font-display font-semibold text-white border-amber-600 border-2 transition-all duration-300 ease-in-out hover:bg-gradient-to-r from-zinc-900 to-zinc-900 hover:from-yellow-500 hover:to-orange-600 hover:text-zinc-900 flex items-center gap-2">
+        <div className="absolute sm:top-[220px] top-[280px] left-[4%] sm:left-[20%]  text-[9px] sm:text-xl py-2 px-5 rounded-full font-semibold text-white border-amber-600 border-2 transition-all duration-300 ease-in-out hover:bg-gradient-to-r from-zinc-900 to-zinc-900 hover:from-yellow-500 hover:to-orange-600 hover:text-zinc-900 flex items-center gap-2">
           <FaBolt /> Website Speed Optimization
         </div>
-        <div className="absolute sm:top-[220px] sm:right-[25%] top-[280px] right-[5%] text-[9px] sm:text-xl py-2 px-5 rounded-full font-display font-semibold text-white border-amber-600 border-2 transition-all duration-300 ease-in-out hover:bg-gradient-to-r from-zinc-900 to-zinc-900 hover:from-yellow-500 hover:to-orange-600 hover:text-zinc-900 flex items-center gap-2">
+        <div className="absolute sm:top-[220px] sm:right-[25%] top-[280px] right-[4%] text-[9px] sm:text-xl py-2 px-5 rounded-full font font-semibold text-white border-amber-600 border-2 transition-all duration-300 ease-in-out hover:bg-gradient-to-r from-zinc-900 to-zinc-900 hover:from-yellow-500 hover:to-orange-600 hover:text-zinc-900 flex items-center gap-2">
           <FaShoppingCart /> E-commerce Setup
         </div>
-        <div className="absolute sm:top-[450px] sm:left-[27%]  top-[390px] left-[1%]  text-[9px] sm:text-xl py-2 px-5 rounded-full font-display font-semibold text-white border-amber-600 border-2 transition-all duration-300 ease-in-out hover:bg-gradient-to-r from-zinc-900 to-zinc-900 hover:from-yellow-500 hover:to-orange-600 hover:text-zinc-900 flex items-center gap-2">
+        <div className="absolute sm:top-[450px] sm:left-[27%]  top-[390px] left-[1%]  text-[9px] sm:text-xl py-2 px-5 rounded-full font font-semibold text-white border-amber-600 border-2 transition-all duration-300 ease-in-out hover:bg-gradient-to-r from-zinc-900 to-zinc-900 hover:from-yellow-500 hover:to-orange-600 hover:text-zinc-900 flex items-center gap-2">
           <FaPencilAlt /> Brand Identity Design
         </div>
-        <div className="absolute top-[450px] right-[27%]  text-[9px] sm:text-xl py-2 px-5 rounded-full font-display font-semibold text-white border-amber-600 border-2 transition-all duration-300 ease-in-out hover:bg-gradient-to-r from-zinc-900 to-zinc-900 hover:from-yellow-500 hover:to-orange-600 hover:text-zinc-900 flex items-center gap-2">
+        <div className="absolute top-[450px] right-[27%]  text-[9px] sm:text-xl py-2 px-5 rounded-full font font-semibold text-white border-amber-600 border-2 transition-all duration-300 ease-in-out hover:bg-gradient-to-r from-zinc-900 to-zinc-900 hover:from-yellow-500 hover:to-orange-600 hover:text-zinc-900 flex items-center gap-2">
           <FaMobileAlt /> Mobile-Responsive Layouts
         </div>
-        <div className="absolute sm:top-[580px] sm:right-[25%] top-[390px] right-[5%]  text-[9px] sm:text-xl py-2 px-5 rounded-full font-display font-semibold text-white border-amber-600 border-2 transition-all duration-300 ease-in-out hover:bg-gradient-to-r from-zinc-900 to-zinc-900 hover:from-yellow-500 hover:to-orange-600 hover:text-zinc-900 flex items-center gap-2">
+        <div className="absolute sm:top-[580px] sm:right-[25%] top-[390px] right-[5%]  text-[9px] sm:text-xl py-2 px-5 rounded-full font font-semibold text-white border-amber-600 border-2 transition-all duration-300 ease-in-out hover:bg-gradient-to-r from-zinc-900 to-zinc-900 hover:from-yellow-500 hover:to-orange-600 hover:text-zinc-900 flex items-center gap-2">
           <FaMagic /> UI/UX Enhancements
         </div>
-        {/* <div className="absolute sm:top-[580px] sm:left-[25%] top-[390px] right-[2%]  text-xs sm:text-xl py-2 px-5 rounded-full font-display font-semibold text-white border-amber-600 border-2 transition-all duration-300 ease-in-out hover:bg-gradient-to-r from-zinc-900 to-zinc-900 hover:from-yellow-500 hover:to-orange-600 hover:text-zinc-900 flex items-center gap-2">
+        {/* <div className="absolute sm:top-[580px] sm:left-[25%] top-[390px] right-[2%]  text-xs sm:text-xl py-2 px-5 rounded-full font font-semibold text-white border-amber-600 border-2 transition-all duration-300 ease-in-out hover:bg-gradient-to-r from-zinc-900 to-zinc-900 hover:from-yellow-500 hover:to-orange-600 hover:text-zinc-900 flex items-center gap-2">
           <FaMagic /> UI/UX Enhancements
         </div> */}
-        <div className="absolute sm:top-[580px] sm:left-[25%] top-[220px] left-[30%] text-[9px] sm:text-xl py-2 px-5 rounded-full font-display font-semibold text-white border-amber-600 border-2 transition-all duration-300 ease-in-out hover:bg-gradient-to-r from-zinc-900 to-zinc-900 hover:from-yellow-500 hover:to-orange-600 hover:text-zinc-900 flex items-center gap-2">
+        <div className="absolute sm:top-[580px] sm:left-[25%] top-[220px] left-[30%] text-[9px] sm:text-xl py-2 px-5 rounded-full font font-semibold text-white border-amber-600 border-2 transition-all duration-300 ease-in-out hover:bg-gradient-to-r from-zinc-900 to-zinc-900 hover:from-yellow-500 hover:to-orange-600 hover:text-zinc-900 flex items-center gap-2">
           <FaBrain /> SEO Basics Integration
         </div>
 

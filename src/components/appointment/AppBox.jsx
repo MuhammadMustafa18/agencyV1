@@ -15,7 +15,7 @@ const AppBox = () => {
             discussions.
           </div>
         </div>
-        <button className="rounded-full mt-3 sm:mt-0 inline-block w-auto items-center border-2 text-xl px-8 hover:bg-white hover:text-zinc-900 hover:scale-95 hover:font-bold transition duration-300">
+        <button className="rounded-full mt-5 py-2 sm:py-0 sm:mt-0 inline-flex sm:inline-block justify-center  w-1/2 sm:w-auto items-center border-2 text-xl px-8 hover:bg-white hover:text-zinc-900 hover:scale-95 hover:font-bold transition duration-300">
           Contact
         </button>
       </div>

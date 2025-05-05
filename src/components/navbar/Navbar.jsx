@@ -41,7 +41,7 @@ const Navbar = () => {
         className="flex items-center flex-shrink-0"
         transition={{ type: "spring", stiffness: 100, damping: 15 }}
       >
-        <span className="font-extrabold text-2xl tracking-tight">
+        <span className="font-bold text-2xl tracking-tight">
           Web Venture.
         </span>
       </motion.div>
@@ -60,7 +60,7 @@ const Navbar = () => {
 
       {/* Contact Button */}
       <motion.div transition={{ type: "spring", stiffness: 100, damping: 15 }}>
-        <button className="bg-gradient-to-r hidden sm:block font-display font-semibold from-yellow-500 to-orange-600 py-2 px-5 rounded-full text-zinc-900  hover:from-zinc-900 hover:to-zinc-900 hover:text-white border-amber-600 border-2 transition-all duration-300 ease-in-out">
+        <button className="bg-gradient-to-r hidden sm:block font-semibold from-yellow-500 to-orange-600 py-2 px-5 rounded-full text-zinc-900  hover:from-zinc-900 hover:to-zinc-900 hover:text-white border-amber-600 border-2 transition-all duration-300 ease-in-out">
           Contact us
         </button>
       </motion.div>

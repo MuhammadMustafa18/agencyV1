@@ -46,10 +46,10 @@ const ProjectsSection = () => {
     <section className="max-w-full mx-0 md:mx-12 py-18 px-6">
       <div className="flex flex-col text-white mb-6 items-left">
         <div className="flex flex-row">
-          <LuDot size={64} />
-          <div className="text-6xl font-extrabold">Our Portfolio </div>
+          
+          <div className="text-6xl font-mono">Our Portfolio </div>
         </div>
-        <div className="text-xl mb-5 mt-3 mx-16">Recent and best projects </div>
+        <div className="text-xl mb-5 mt-3 ">Recent and best projects </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {projects.map((project) => (

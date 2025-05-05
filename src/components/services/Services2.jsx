@@ -52,15 +52,15 @@ const websites = [
 ];
 const Services2 = () => {
   return (
-    <div className='flex justify-center flex-col my-25'>
+    <div className="flex justify-center flex-col my-25">
       <div className="w-full justify-items-center text-white sm:px-20 px-5 grid sm:grid-cols-2 grid-cols-1 gap-5">
         <div className="border-r-2 border-r-zinc-800">
-          <h1 className="text-lg mb-3 font-mono">Websites</h1>
-          <p className="text-3xl font-display font-semibold mb-6 w-[75%]">
+          <h1 className="text-lg mb-3 text-zinc-400 font-mono">Websites</h1>
+          <p className="text-3xl font-bold mb-6 w-[90%] sm:w-[75%]">
             A website makes your business visible 24/7 and helps attract more
             customers.
           </p>
-          <p className="text-lg w-[85%]">
+          <p className="text-md w-[85%] text-zinc-400">
             A website helps people find your business online anytime, from
             anywhere. It builds trust and makes it easy for customers to learn
             about your products or services. Here are some popular websites:
@@ -69,7 +69,7 @@ const Services2 = () => {
             {websites.map((website) => (
               <div
                 key={website.name}
-                className="flex flex-row items-center font-mono justify-between pr-15 mb-3"
+                className="flex flex-row items-center font-mono justify-between pr-2 sm:pr-15 mb-3"
               >
                 <div className="flex flex-row items-center space-x-4">
                   <div className="bg-gradient-to-r from-yellow-500 to-orange-500 p-2 rounded-full">
@@ -84,13 +84,13 @@ const Services2 = () => {
             ))}
           </div>
         </div>
-        <div className="">
-          <h1 className="text-lg mb-3 font-mono">Services</h1>
-          <p className="text-3xl font-display font-semibold mb-6 w-[75%]">
+        <div className="sm:mt-0 mt-10">
+          <h1 className="text-lg text-zinc-400 mb-3 font-mono">Services</h1>
+          <p className="text-3xl font-bold mb-6 w-[90%] sm:w-[75%]">
             High-quality digital services that give your business a competitive
             edge in a crowded market.
           </p>
-          <p className="text-lg mb-15 w-[85%]">
+          <p className="text-md text-zinc-400 mb-15 w-[85%]">
             Professional digital services like web development, SEO, and design
             help businesses attract, engage, and retain customers.
           </p>
@@ -98,7 +98,7 @@ const Services2 = () => {
             {services.map((service) => (
               <div
                 key={service.name}
-                className="flex flex-row items-center font-mono justify-between pr-15 mb-3"
+                className="flex flex-row items-center font-mono justify-between pr-2 sm:pr-15 mb-3"
               >
                 <div className="flex flex-row items-center space-x-4">
                   <div className="bg-gradient-to-r from-yellow-600 to-orange-600 p-2 rounded-full">
@@ -114,11 +114,11 @@ const Services2 = () => {
           </div>
         </div>
       </div>
-     <div className="flex justify-center mt-10">
-  <button className="hover:bg-gradient-to-r font-display font-semibold hover:from-yellow-500 hover:to-orange-600 py-2 px-5 rounded-full hover:text-zinc-900 from-zinc-900 to-zinc-900 text-white border-amber-600 border-2 transition-all duration-300 ease-in-out">
-    Have something specific in mind?
-  </button>
-  </div>
+      <div className="flex justify-center mt-10">
+        <button className="hover:bg-gradient-to-r font-bold hover:from-yellow-500 hover:to-orange-600 py-2 px-5 rounded-full hover:text-zinc-900 from-zinc-900 to-zinc-900 text-white border-amber-600 border-2 transition-all duration-300 ease-in-out">
+          Have something specific in mind?
+        </button>
+      </div>
     </div>
   );
 }

@@ -76,7 +76,7 @@ const Features = () => {
         {FeaturesData.map((featureData, index) => (
           <div
             key={index}
-            className={`flex flex-col sm:flex-row gap-10 sm:space-y-10 items-start ${
+            className={`flex flex-col sm:flex-row gap-3 sm:gap-10 sm:space-y-10 items-start ${
               index % 2 === 1 ? "sm:flex-row-reverse" : ""
             } mb-7 items-center`}
           >
@@ -87,24 +87,24 @@ const Features = () => {
                 <div className="w-[25%] text-6xl">
                   <featureData.image />
                 </div>
-                <div className="font-display font-semibold sm:font-semibold text-xl sm:text-xl max-w-[40%] text-center py-4">
+                <div className="font-primary font-semibold sm:font-semibold text-xl sm:text-xl max-w-[40%] text-center py-4">
                   {/* heading */}
                   {featureData.name}
                 </div>
               </div>
             </div>
             <div className="flex flex-col sm:w-[50%]">
-              <div className="font-mono font-bold sm:font-medium text-xl sm:text-xl px-5 py-1 sm:py-4">
+              <div className="font-primary font-bold text-black sm:font-primary text-3xl sm:text-5xl px-5 py-1 pb-4 sm:py-4">
                 {/* heading */}
                 {featureData.name}
               </div>
-              <ul className="list-disc font-display min-w-[85%] text-md sm:text-2xl font-medium sm:font-semibold px-5 space-y-2.5">
+              <ul className="list-disc font-primary text-zinc-500 min-w-[85%] pb-3 text-sm sm:text-base font-medium sm:font-medium px-5 space-y-0.5">
                 {featureData.description.map((point, index) => (
                   <li key={point}>{point}</li>
                 ))}
               </ul>
               <div className="w-full mt-3 px-5">
-                <div className="inline-flex text-sm sm:text-md py-2 px-5 rounded-full font-display font-semibold text-white hover:border-amber-600 border-2 transition-all duration-500 ease-in-out hover:bg-gradient-to-r bg-gradient-to-r from-zinc-800 to-zinc-800 hover:from-yellow-500 hover:to-orange-600 hover:text-zinc-900 items-center gap-2">
+                <div className="inline-flex text-sm sm:text-md py-2 px-5 rounded-full font-primary font-semibold text-white hover:border-amber-600 border-2 transition-all duration-500 ease-in-out hover:bg-gradient-to-r bg-gradient-to-r from-zinc-800 to-zinc-800 hover:from-yellow-500 hover:to-orange-600 hover:text-zinc-900 items-center gap-2">
                   <FaMagic /> View all benefits
                 </div>
               </div>
