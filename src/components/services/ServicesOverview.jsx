@@ -49,10 +49,10 @@ const ServicesOverview = () => {
         </div>
 
         {/* Additional Elements (unchanged) */}
-        <div className="absolute sm:top-[120px] sm:left-[10%] top-[150px] left-[10%]  text-gray-400 font-extrabold text-[9px] sm:text-xl bg- border-gray-400 border-2 py-2 px-5 rounded-full">
+        <div className="absolute sm:top-[120px] sm:left-[10%] top-[165px] left-[10%]  text-gray-400 font-extrabold text-[9px] sm:text-xl bg- border-gray-400 border-2 py-2 px-5 rounded-full">
           Fast Delivery
         </div>
-        <div className="absolute sm:top-[120px] sm:right-[15%] top-[150px] right-[15%] text-gray-400 font-extrabold text-[9px] sm:text-xl bg- border-gray-400 border-2 py-2 px-5 rounded-full">
+        <div className="absolute sm:top-[120px] sm:right-[15%] top-[165px] right-[10%] text-gray-400 font-extrabold text-[9px] sm:text-xl bg- border-gray-400 border-2 py-2 px-5 rounded-full">
           Global Reach
         </div>
         <div className="absolute sm:top-[450px] sm:left-[8%] top-[510px] left-[8%] text-gray-400 font-extrabold text-[9px] sm:text-xl bg- border-gray-400 border-2 py-2 px-5 rounded-full">
