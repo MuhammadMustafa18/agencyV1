@@ -26,8 +26,9 @@ const ImageSwipe = ({ images = [], className = "" }) => {
   });
 
   return (
-    <div {...handlers} className={`overflow-hidden relative touch-pan-x`}>
+    <div className={`overflow-hidden relative touch-pan-x`}>
       <div
+        {...handlers}
         className="relative flex transition-transform duration-300 ease-in-out"
         style={{
           width: `${images.length * 100}%`,
