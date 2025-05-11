@@ -2,43 +2,55 @@ import React from "react";
 import ImageSwipe from "../Request/ImageSwipe";
 import img1 from "../../assets/1.jpg";
 import img2 from "../../assets/cleanUI.png";
-const images = [img1, img2];
+import seo from "../../assets/seo.png";
+import salesFunnel from "../../assets/salesFunnel.png";
+import manual from "../../assets/manual.png";
+import social from "../../assets/social.png";
+import cred from "../../assets/cred.png";
 const data = [
   {
-    image: img1,
+    image: seo,
     title: "No Search Engine Visibility",
     facts: [
+      {
+        stat: "77%",
+        desc: "of Consumers Use Google When Looking for Local Business Information.",
+      },
       {
         stat: "76%",
         desc: "of people who search a service on their smartphone physically visit that service provider within 24 hours.",
       },
-      {
-        stat: "84%",
-        desc: "of homeowners use Google before selecting a home service provider.",
-      },
     ],
-    description:
-      "You can't be found through Google searches unless you're on a site or directory. You rely only on word of mouth or paid ads to get noticed.",
+    description: [
+      "People don’t search Facebook or Instagram for goods and services — they search Google.",
+      "Without a website, you won’t show up on search engines.",
+      "You’re invisible to potential customers unless they already know your name.",
+      "That means relying on word of mouth or paid ads just to get noticed.",
+    ],
   },
   {
-    image: img2,
-    title: "Slow Replies Lose Customers",
+    image: salesFunnel,
+    title: "Sales Funnel",
     facts: [
       {
-        stat: "78%",
-        desc: "of customers buy from the company that responds to their inquiry first.",
+        stat: "70%",
+        desc: "of small businesses lose leads because they take too long to respond or forget to follow up.",
       },
       {
         stat: "50%",
-        desc: "of leads go with the first business to follow up — even if others are cheaper.",
+        desc: "of customers go with the first business that replies them — even if others are cheaper.",
       },
     ],
-    description:
-      "When customers message on WhatsApp or Instagram and don’t get a quick reply, they move on. A website keeps them engaged with instant info: pricing, FAQs, service details, contact number, or even a quote form — no waiting, no drop-off.",
+    description: [
+      "On Instagram, customers wait hours for replies and must ask everything manually — pricing, availability, portfolio, etc.",
+      "This wastes time for both you and the customer.",
+      "On a website, everything is clear and available instantly — services, photos, prices, reviews.",
+      "You can guide visitors from interest to decision automatically with a built-in sales funnel.",
+    ],
   },
   {
-    image: img1,
-    title: "You Explain Everything Manually",
+    image: manual,
+    title: "You Explain and do Everything Manually",
     facts: [
       {
         stat: "78%",
@@ -49,11 +61,16 @@ const data = [
         desc: "of small businesses lose leads because they take too long to respond or forget to follow up.",
       },
     ],
-    description:
-      "You waste time typing out prices, services, and answers again and again on WhatsApp. A website does the talking for you — 24/7. Visitors instantly see what you offer, your prices, photos, contact options, and more. That means fewer lost leads and more conversions.",
+    description: [
+      "You repeat yourself constantly: sending pricing, menus, photos, and past work manually over chat.",
+      "This is time-consuming, inconsistent, and prone to error.",
+      "A website answers FAQs for you — 24/7 — showing exactly what you offer without effort.",
+      "You can even automate quoting, bookings, or consultations.",
+      "That means less work and more closed deals.",
+    ],
   },
   {
-    image: img1,
+    image: cred,
     title: "No Website = No Credibility",
     facts: [
       {
@@ -65,11 +82,15 @@ const data = [
         desc: "judge a company’s credibility based on its website design.",
       },
     ],
-    description:
-      "Without a website, your business can seem unprofessional or even fake. A clean, branded site builds trust instantly — with testimonials, reviews, service photos, location, and verified contact info. It tells people you're legit before they even call.",
+    description: [
+      "No website? People assume you're not legit, unprofessional, or even fake.",
+      "Social media alone doesn’t build enough trust, especially with strangers.",
+      "A proper website shows reviews, service photos, business info, and contact details — all in one place.",
+      "It builds confidence and positions you as a reliable professional.",
+    ],
   },
   {
-    image: img1,
+    image: social,
     title: "You Lose Sales on Social Media",
     facts: [
       {
@@ -81,10 +102,16 @@ const data = [
         desc: "say they’ll move on to another provider if they don’t get quick info or a response.",
       },
     ],
-    description:
-      "On Instagram or Facebook, your posts disappear in feeds. Customers DM, wait, and often leave. With a website, everything’s organized: services, pricing, FAQs, and contact — no back-and-forth. You capture more leads while you sleep, Instagram DM flow: Customer waits hours for replies, gets tired of asking questions, leaves. ✅ Website flow: Customer finds your site on Google, reads everything, and books you without even messaging.",
+    description: [
+      "A user sees a random post like “Pipe Repair – $50” and clicks your profile.",
+      "Instead of helpful info, they find memes, old promos, or scattered posts.",
+      "They can't easily find pricing, service list, or next steps.",
+      "There’s no structure or call to action — just “DM me” or a vague link in bio.",
+      "That frustration makes them leave and choose someone else who’s more clear and professional.",
+    ],
   },
 ];
+  
 const Problems = () => {
   return (
     <div className="bg-white py-4">

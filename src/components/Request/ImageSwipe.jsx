@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useSwipeable } from "react-swipeable";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { FaSquareArrowUpRight } from "react-icons/fa6";
 
 import { FaCircleChevronRight } from "react-icons/fa6";
 import { FaCircleChevronLeft } from "react-icons/fa6";
@@ -11,7 +12,7 @@ const ImageSwipe = ({ images = [], className = "" }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 7000);
+    }, 10000);
     return () => clearInterval(interval); // clean up on unmount
   }, [images.length]);
   const handlers = useSwipeable({
@@ -45,43 +46,50 @@ const ImageSwipe = ({ images = [], className = "" }) => {
                 key={i}
                 src={img.image}
                 alt={`Slide ${i}`}
-                className={`${className} `}
+                className={`${className} border-6 shadow-3xl border-zinc-200`}
               />
-              <button
-                onClick={() => setIndex((prev) => (prev + 1) % images.length)}
-                className="absolute text-4xl text-white top-[50%] left-4"
-              >
-                <FaCircleChevronLeft />
-              </button>
               <button
                 onClick={() =>
                   setIndex((prev) => (prev - 1 + images.length) % images.length)
                 }
-                className="absolute text-4xl text-white top-[50%] right-4"
+                className="absolute text-4xl text-black top-[50%] left-4"
+              >
+                <FaCircleChevronLeft />
+              </button>
+              <button
+                onClick={() => setIndex((prev) => (prev + 1) % images.length)}
+                className="absolute text-4xl text-black top-[50%] right-4"
               >
                 <FaCircleChevronRight />
               </button>
             </div>
-            <div className="text-black sm:py-10 py-3 sm:max-w-1/2">
-              <div className="text-black font-bold text-4xl px-2 sm:max-w-[80%] mb-4">
+            <div className="text-black sm:py-10 py-3 sm:px-0 px-4 sm:max-w-1/2">
+              <div className="text-black font-bold text-5xl sm:max-w-[80%] mb-4">
                 {img.title}
               </div>
               {img.facts.map((fact, j) => (
                 <div key={j} className="flex flex-col my-8 ">
-                  <div>
-                    <div className="font-bold text-3xl py-2 border-l-4 px-4">
+                  <div className="flex flex-row items-center">
+                    <div className="font-bold text-zinc-500 text-5xl mr-2">
                       {fact.stat}
                     </div>
-                    <div className="font-medium sm:max-w-[70%] text-sm text-zinc-500 px-4 mt-2">
+                    <div className="font-medium sm:max-w-[70%] text-sm text-zinc-500  mt-2">
                       {fact.desc}
                     </div>
                   </div>
                 </div>
               ))}
-              <div className=" font-medium px-2 text-zinc-600 mb-4">
-                {img.description}
-              </div>
-              <button className="bg-orange-400 mx-2 flex text-sm py-1 items-center text-white font-semibold px-3 rounded-full">
+              {img.description.map((d, k) => (
+                <div key={k} className="flex flex-col">
+                  <div>
+                    <div className="font-semibold sm:max-w-[70%] text-sm flex text-zinc-500  mt-2">
+                      {k + 1}. {d}
+                    </div>
+                  </div>
+                </div>
+              ))}
+
+              <button className="bg-black flex text-sm py-1 mt-3 items-center text-white font-semibold px-3 rounded-full">
                 Learn more <FaArrowRightLong className="text-sm ml-2" />
               </button>
             </div>
