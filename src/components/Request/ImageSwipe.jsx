@@ -21,12 +21,12 @@ const ImageSwipe = ({ images = [], className = "" }) => {
     },
     onSwipedRight: () =>
       setIndex((prev) => (prev - 1 + images.length) % images.length),
-    preventDefaultTouchmoveEvent: true,
+    preventDefaultTouchmoveEvent: false,
     trackMouse: true,
   });
 
   return (
-    <div className={`overflow-hidden relative touch-pan-x`}>
+    <div className={`overflow-hidden relative `}>
       <div
         {...handlers}
         className="relative flex transition-transform duration-300 ease-in-out"
