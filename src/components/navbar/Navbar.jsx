@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
 import GreenButton from "./GreenButton";
 import { FaMagic } from "react-icons/fa";
+import { HiBars2 } from "react-icons/hi2";
 
 const Navbar = () => {
   const { scrollY } = useScroll(); // Get scrollY position
@@ -41,9 +42,7 @@ const Navbar = () => {
         className="flex items-center flex-shrink-0"
         transition={{ type: "spring", stiffness: 100, damping: 15 }}
       >
-        <span className="font-bold text-2xl tracking-tight">
-          Web Venture.
-        </span>
+        <span className="font-bold text-2xl tracking-tight">Web Venture.</span>
       </motion.div>
       {/* Middle menu */}
       <div className="hidden md:flex space-x-4">
@@ -67,8 +66,8 @@ const Navbar = () => {
 
       {/* Mobile Menu Button */}
       <div className="md:hidden">
-        <button className="px-3 py-2 border rounded text-white border-white hover:text-gray-300 hover:border-gray-300">
-          ☰
+        <button className="px-2 py-2  rounded-full border border-gray-500 text-white hover:text-gray-300">
+          <HiBars2 className="text-2xl"/>
         </button>
       </div>
     </motion.nav>
