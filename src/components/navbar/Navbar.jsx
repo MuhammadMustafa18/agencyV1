@@ -76,7 +76,10 @@ const Navbar = () => {
 
       {/* Mobile Menu Button */}
       <div className="md:hidden">
-        <button className="px-2 py-2  rounded-full border border-gray-500 text-white hover:text-gray-300">
+        <button
+          onClick={() => navigate("/contact")}
+          className="px-2 py-2  rounded-full border border-gray-500 text-white hover:text-gray-300"
+        >
           <HiBars2 className="text-2xl" />
         </button>
       </div>
