@@ -2,21 +2,25 @@ import React from 'react'
 import GreenButton from '../navbar/GreenButton';
 import { FaShoppingCart } from 'react-icons/fa';
 import { TiArrowForward } from "react-icons/ti";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
-
+   const navigate = useNavigate();
+ 
   return (
     <footer className="bg-black  text-white py-8">
       <div className="container max-w-[90%] mx-auto px-6 sm:px-18 grid grid-cols-1 sm:grid-cols-3">
         <div>
-
-        <div className="text-3xl sm:text-4xl font-extrabold">
-          Do you like <br />
-          what you see?
-        </div>
-          <div className="inline-flex w-auto mt-5 text-xs sm:text-xl py-2 px-5 sm:px-5 rounded-full font-primary font-semibold text-white border-amber-600 border-2 transition-all duration-300 ease-in-out hover:bg-gradient-to-r from-zinc-900 to-zinc-900 hover:from-yellow-500 hover:to-orange-600 hover:text-zinc-900 items-center gap-2">
-            <TiArrowForward/> Start a Project
+          <div className="text-3xl sm:text-4xl font-extrabold">
+            Do you like <br />
+            what you see?
+          </div>
+          <div
+            onClick={() => navigate("/contact")}
+            className="inline-flex w-auto mt-5 text-xs sm:text-xl py-2 px-5 sm:px-5 rounded-full font-primary font-semibold text-white border-amber-600 border-2 transition-all duration-300 ease-in-out hover:bg-gradient-to-r from-zinc-900 to-zinc-900 hover:from-yellow-500 hover:to-orange-600 hover:text-zinc-900 items-center gap-2"
+          >
+            <TiArrowForward /> Start a Project
           </div>
         </div>
         <div className="flex flex-col text-gray-400 sm:mx-10 mt-10 sm:mt-0">
