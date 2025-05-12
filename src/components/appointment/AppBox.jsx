@@ -1,6 +1,9 @@
 import React from 'react'
+import { useNavigate } from "react-router-dom";
 
 const AppBox = () => {
+  const navigate = useNavigate();
+
   return (
     <div>
       <div className="mt-4 flex flex-col items-center">
@@ -8,7 +11,10 @@ const AppBox = () => {
           Have something unique in mind?
         </h2>
 
-        <button className="text-white py-3 rounded-full border-2 text-xl px-8 hover:bg-white hover:text-zinc-900 hover:scale-95 hover:font-bold transition duration-300">
+        <button
+          onClick={() => navigate("/contact")}
+          className="text-white py-3 rounded-full border-2 text-xl px-8 hover:bg-white hover:text-zinc-900 hover:scale-95 hover:font-bold transition duration-300"
+        >
           Book a Google meeting
         </button>
         <h2 className="text-sm font-bold text-center  text-zinc-400 my-7">
@@ -17,7 +23,10 @@ const AppBox = () => {
       </div>
       <div className="max-w-[90%] bg-zinc-900 text-white mx-auto p-8  rounded-md flex flex-col sm:flex-row justify-between">
         <div>
-          <div className="text-2xl font-extrabold mb-2">
+          <div
+            onClick={() => navigate("/contact")}
+            className="text-2xl font-extrabold mb-2"
+          >
             Or Connect with WebVenture on WhatsApp{" "}
           </div>
 

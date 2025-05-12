@@ -3,6 +3,7 @@ import { motion, useScroll, useSpring } from "framer-motion";
 import GreenButton from "./GreenButton";
 import { FaMagic } from "react-icons/fa";
 import { HiBars2 } from "react-icons/hi2";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const { scrollY } = useScroll(); // Get scrollY position
@@ -30,6 +31,7 @@ const Navbar = () => {
       }
     });
   }, [smoothScrollY]);
+  const navigate = useNavigate();
 
   return (
     <motion.nav
@@ -42,9 +44,14 @@ const Navbar = () => {
         className="flex items-center flex-shrink-0"
         transition={{ type: "spring", stiffness: 100, damping: 15 }}
       >
-        <span className="font-bold text-2xl tracking-tight">Web Venture.</span>
+        <span
+          onClick={() => navigate("/")}
+          className="font-bold text-2xl tracking-tight cursor-pointer"
+        >
+          Web Venture.
+        </span>
       </motion.div>
-      {/* Middle menu */}
+      {/* Middle menu
       <div className="hidden md:flex space-x-4">
         <a href="#" className="hover:text-gray-300">
           Services
@@ -55,11 +62,14 @@ const Navbar = () => {
         <a href="#" className="hover:text-gray-300">
           About
         </a>
-      </div>
+      </div> */}
 
       {/* Contact Button */}
       <motion.div transition={{ type: "spring", stiffness: 100, damping: 15 }}>
-        <button className="bg-gradient-to-r hidden sm:block font-semibold from-yellow-500 to-orange-600 py-2 px-5 rounded-full text-zinc-900  hover:from-zinc-900 hover:to-zinc-900 hover:text-white hover:border-amber-600 border-2 transition-all duration-300 ease-in-out">
+        <button
+          onClick={() => navigate("/contact")}
+          className="bg-gradient-to-r hidden sm:block font-semibold cursor-pointer from-yellow-500 to-orange-600 py-2 px-5 rounded-full text-zinc-900  hover:from-zinc-900 hover:to-zinc-900 hover:text-white hover:border-amber-600 border-2 transition-all duration-300 ease-in-out"
+        >
           Contact us
         </button>
       </motion.div>
@@ -67,7 +77,7 @@ const Navbar = () => {
       {/* Mobile Menu Button */}
       <div className="md:hidden">
         <button className="px-2 py-2  rounded-full border border-gray-500 text-white hover:text-gray-300">
-          <HiBars2 className="text-2xl"/>
+          <HiBars2 className="text-2xl" />
         </button>
       </div>
     </motion.nav>

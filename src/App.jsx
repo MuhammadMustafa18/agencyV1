@@ -1,42 +1,24 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Navbar from './components/navbar/Navbar'
-import Hero from './components/hero/Hero'
-import Description from './components/description/Description'
-import ProjectsSection from './components/projects/Projects'
-import Services from './components/services/Services'
-import Footer from './components/Footer/Footer'
-import ServicesOverview from './components/services/ServicesOverview'
-import Appointment from './components/appointment/Appointment'
-import AppBox from "./components/appointment/AppBox";
-import Services2 from './components/services/Services2'
-import Features from './components/services/Features'
-import Request from './components/Request/Request'
-import Problems from './components/Problems/Problems'
-import Solutions from './components/solutions/Solutions'
+import Navbar from './components/navbar/Navbar';
+import HomePage from './Pages/HomePage';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ContactPage from './Pages/ContactPage';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="bg-zinc-900 font-primary">
-      <Navbar />
-      <Hero />
-      <Request />
-      <Problems />
-      <Solutions />
-      <ProjectsSection />
-      <AppBox />
-      {/* <Services2 />
-      <ServicesOverview />
-      <Features/>
-      
-      
-      */}
-      <Footer />
-    </div>
+    <Router>
+      <div className="font-primary">
+        <Navbar /> {/* ✅ Always visible on all pages */}
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/Contact" element={<ContactPage />} />
+        </Routes>
+        <Footer /> {/* ✅ Always visible on all pages */}
+      </div>
+    </Router>
   );
 }
 
