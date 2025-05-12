@@ -1,8 +1,5 @@
 import React from 'react'
-import cleanUI from "../../assets/cleanUI.png"
-import W from "../../assets/W.jpg";
-import M from "../../assets/M.jpg";
-import s from "../../assets/s.jpg";
+
 
 import { FaMagic } from 'react-icons/fa';
 import { FaSearchengin } from "react-icons/fa6";

@@ -1,7 +1,5 @@
 import React from "react";
 import ImageSwipe from "../Request/ImageSwipe";
-import img1 from "../../assets/1.jpg";
-import img2 from "../../assets/cleanUI.png";
 import seo from "../../assets/seo.png";
 import salesFunnel from "../../assets/salesFunnel.png";
 import manual from "../../assets/manual.png";
@@ -114,7 +112,7 @@ const data = [
   
 const Problems = () => {
   return (
-    <div className="bg-white py-4">
+    <div className="bg-white py-4 sm:px-20">
       <div className="">
         <ImageSwipe
           images={data}

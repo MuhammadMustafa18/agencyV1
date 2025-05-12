@@ -39,15 +39,17 @@ const ImageSwipe = ({ images = [], className = "" }) => {
         {images.map((img, i) => (
           <div
             key={i}
-            className="relative w-full flex sm:flex-row sm:space-x-10 flex-col sm:px-10 px-2"
+            className="relative w-full flex sm:flex-row sm:space-x-10 flex-col px-2"
           >
-            <div className="relative sm:max-w-1/2">
-              <img
-                key={i}
-                src={img.image}
-                alt={`Slide ${i}`}
-                className={`${className} border-6 shadow-3xl border-zinc-200`}
-              />
+            <div className="relative h-auto sm:min-w-1/2">
+              <div className="object-contain">
+                <img
+                  key={i}
+                  src={img.image}
+                  alt={`Slide ${i}`}
+                  className={`${className} object-contain border-6 shadow-3xl border-zinc-200`}
+                />
+              </div>
               <button
                 onClick={() =>
                   setIndex((prev) => (prev - 1 + images.length) % images.length)
@@ -64,7 +66,7 @@ const ImageSwipe = ({ images = [], className = "" }) => {
               </button>
             </div>
             <div className="text-black sm:py-10 py-3 sm:px-0 px-4 sm:max-w-1/2">
-              <div className="text-black font-bold text-5xl sm:max-w-[80%] mb-4">
+              <div className="text-black font-bold sm:text-5xl text-3xl sm:max-w-[80%] mb-4">
                 {img.title}
               </div>
               {img.facts.map((fact, j) => (

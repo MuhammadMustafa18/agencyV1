@@ -1,5 +1,4 @@
 import React from "react";
-import hero from "../../assets/hero.mp4";
 import { LuDot } from "react-icons/lu";
 import GreenButton from "../navbar/GreenButton";
 

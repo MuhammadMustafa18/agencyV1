@@ -70,10 +70,10 @@ const Request = () => {
     } 
   return (
     <div className="text-white bg-zinc-900 px-4 mt-20 py-20 sm:px-20">
-      <div className="sm:text-5xl text-2xl sm:text-left text-center font-bold sm:mb-0 mb-5">
+      <div className="sm:text-5xl text-2xl text-center font-bold sm:mb-0 mb-5">
         Let's build something for your business.
       </div>
-      <div className="text-sm sm:block hidden sm:max-w-[70%] my-2 font-medium text-zinc-400">
+      <div className="text-sm sm:block hidden text-center my-2 max-w-[70%] mx-auto font-medium text-zinc-400">
         Whether you're starting from scratch or revamping your online presence,
         we craft websites that are fast, responsive, and built with your goals
         in mind. From booking systems to custom dashboards, we deliver real

@@ -15,6 +15,7 @@ import Services2 from './components/services/Services2'
 import Features from './components/services/Features'
 import Request from './components/Request/Request'
 import Problems from './components/Problems/Problems'
+import Solutions from './components/solutions/Solutions'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -23,14 +24,17 @@ function App() {
     <div className="bg-zinc-900 font-primary">
       <Navbar />
       <Hero />
-      <Request/>
-      <Problems/>
-      <Services2 />
+      <Request />
+      <Problems />
+      <Solutions />
+      <ProjectsSection />
+      <AppBox />
+      {/* <Services2 />
       <ServicesOverview />
       <Features/>
       
-      <ProjectsSection />
-      <AppBox />
+      
+      */}
       <Footer />
     </div>
   );

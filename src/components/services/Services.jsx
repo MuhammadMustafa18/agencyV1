@@ -1,6 +1,6 @@
 import React from "react";
 import { LuDot } from "react-icons/lu";
-import img from "../../assets/1.jpg";
+import img from "../../assets/seo.png";
 import GreenButton from "../navbar/GreenButton";
 
 const servicesData = [

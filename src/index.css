@@ -4,3 +4,12 @@
     --font-display: "Cal Sans", "sans-serif";
     --font-cal: "";
 }
+
+/* Add this in your global CSS */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none; }

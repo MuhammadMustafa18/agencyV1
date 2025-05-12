@@ -1,7 +1,6 @@
 import React from "react";
 import { LuDot } from "react-icons/lu";
 import GreenButton from "../navbar/GreenButton";
-import hero from "../../assets/hero.mp4";
 
 const Description = () => {
   return (

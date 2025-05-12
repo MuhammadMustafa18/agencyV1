@@ -1,55 +1,45 @@
 import React from "react";
 import { LuDot } from "react-icons/lu";
 import GreenButton from "../navbar/GreenButton";
-import img from "../../assets/1.jpg";
+import ep from "../../assets/ep.png";
+import epAdmin from "../../assets/epAdmin.png";
+
 const projects = [
   {
     id: 1,
-    title: "Marcem Events",
+    title: "Sample Event Planner",
     when: 2025,
-    description: "A Modern UI/UX design with backend integration for MARCEM.",
-    image: img,
-    tags: ["UI/UX", "React", "Tailwind"],
-    link: "#",
+    description:
+      "A Modern UI design with Book quotes, estimate quotes, instagram-like gallary and much more.",
+    image: ep,
+    tags: ["UI/UX", "React", "Tailwind", "Firebase", "Cloudinary"],
+    link: "https://eventplanner-ten.vercel.app/",
   },
   {
     id: 2,
-    title: "Project Two",
+    title: "Sample Event Planner",
     when: 2025,
-    description: "A full-stack web application with a responsive UI.",
-    image: img,
-    tags: ["Full Stack", "React", "Node.js"],
-    link: "#",
-  },
-  {
-    id: 3,
-    title: "Project Three",
-    when: 2025,
-    description: "An e-commerce platform with real-time database updates.",
-    image: img,
-    tags: ["E-commerce", "MongoDB", "Express"],
-    link: "#",
-  },
-  {
-    id: 4,
-    title: "Project Four",
-    when: 2025,
-    description: "A portfolio website with smooth animations.",
-    image: img,
-    tags: ["Portfolio", "Animations", "GSAP"],
-    link: "#",
+    description:
+      "A proper/user-friendly backend admin panel to see/finalize booked quotes, add images, update services and security for admin access.",
+    image: epAdmin,
+    tags: ["UI/UX", "React", "Tailwind", "Firebase", "Cloudinary"],
+    link: "https://eventplanner-admin.vercel.app/",
   },
 ];
 
+
 const ProjectsSection = () => {
   return (
-    <section className="max-w-full mx-0 md:mx-12 py-18 px-6">
-      <div className="flex flex-col text-white mb-6 items-left">
+    <section className="max-w-full mx-0 sm:px-20 py-18 px-6">
+      <div className="flex flex-col text-white mb-6 items-center">
         <div className="flex flex-row">
-          
-          <div className="text-6xl font-mono">Our Portfolio </div>
+          <div className="text-6xl text-center font-semibold">
+            Our Portfolio{" "}
+          </div>
         </div>
-        <div className="text-xl mb-5 mt-3 ">Recent and best projects </div>
+        <div className="text-xl mb-5 mt-3 text-zinc-200">
+          Recent and best projects{" "}
+        </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {projects.map((project) => (
@@ -66,7 +56,7 @@ const ProjectsSection = () => {
                 <h3 className="text-md  font-semibold">{project.title}</h3>
               </div>
             </div>
-            <p className="text-white mt-2 text-3xl font-semibold">
+            <p className="text-white mt-2 text-xl font-semibold">
               {project.description}
             </p>
 
@@ -81,30 +71,20 @@ const ProjectsSection = () => {
                 </span>
               ))}
             </div>
+            <div className="mt-3 w-max text-sm text-black bg-gradient-to-r font-semibold from-yellow-500 to-orange-600 px-4 py-2 hover:from-zinc-900 hover:to-zinc-900 hover:text-white border transition duration-200 rounded-full hover:border-amber-600">
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Project
+              </a>
 
-            <a href={project.link} className="">
-              <GreenButton
-                bgcolor="bg-zinc-900 text-white mt-4"
-                s={36}
-                text="View Project"
-              />
-            </a>
+            </div>
           </div>
         ))}
       </div>
-      <div className="mt-4 flex flex-col items-center">
-        <h2 className="text-5xl font-bold text-center text-white mt-20 mb-10">
-          Have something unique in mind?
-        </h2>
-        
-        <button className="text-white py-3 rounded-full border-2 text-xl px-8 hover:bg-white hover:text-zinc-900 hover:scale-95 hover:font-bold transition duration-300">
-          Book a meeting
-        </button>
-        <h2 className="text-sm font-bold text-center  text-zinc-400 my-7">
-          Book a meeting in just a few clicks with Google Calendar. <br />No sign-ups
-          needed, automatic reminders, and instant calendar updates.
-        </h2>
-      </div>
+      
     </section>
   );
 };
