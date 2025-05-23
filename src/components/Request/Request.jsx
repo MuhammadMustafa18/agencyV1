@@ -69,7 +69,7 @@ const Request = () => {
 
     } 
   return (
-    <div className="text-white bg-zinc-900 px-4 mt-20 py-20 sm:px-20">
+    <div className="text-white bg-zinc-900 h-screen px-4 mt-20 py-20 sm:px-20">
       <div className="sm:text-5xl text-2xl text-center font-bold sm:mb-0 mb-5">
         Let's build something for your business.
       </div>
@@ -79,7 +79,7 @@ const Request = () => {
         in mind. From booking systems to custom dashboards, we deliver real
         results — not just pretty pages.
       </div>
-      <div className="relative bg-zinc-800 rounded-lg flex flex-col mb-2 w-full">
+      <div className="relative bg-zinc-800 rounded-lg flex flex-col my-6 w-full">
         <textarea
           onFocus={() => setIsFocused(true)}
           //   onBlur={() => setIsFocused(false)}
@@ -108,10 +108,8 @@ const Request = () => {
         </div>
 
         <RiMessage2Fill
-          className={`absolute sm:top-3 top-4 ml-2 text-2xl ${
-            request.length
-              ? "text-white"
-              : " text-zinc-500"
+          className={`absolute sm:top-3 top-4 ml-2 text-2xl transition duration-300 ${
+            request.length ? "text-white" : " text-zinc-500"
           } `}
         />
       </div>

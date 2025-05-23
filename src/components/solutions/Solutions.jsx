@@ -40,7 +40,7 @@ const websiteTypes = [
       "Contact & pricing info",
     ],
     examples: [
-      { name: "EPlanner", icon: <FaConnectdevelop /> },
+      { name: "EP", icon: <FaConnectdevelop /> },
       { name: "Airbnb", icon: <FaAirbnb /> },
       { name: "Slack", icon: <SiSlack /> },
     ],
@@ -98,7 +98,7 @@ const Solutions = () => {
     const scrollRef = useRef()
   return (
     <div className="text-white sm:px-20 px-4 py-26 min-h-screen sm:py-30 ">
-      <div className="mb-4 text-4xl font-bold">
+      <div className="mb-4 sm:text-6xl text-3xl font-display">
         Solution for any business type
       </div>
       <div className="flex flex-row justify-between mb-8">
@@ -128,34 +128,39 @@ const Solutions = () => {
 
       {/* Grid of Website Solutions */}
       <div
-        className="gap-6 flex py-4 px-2 overflow-x-auto scroll-smooth no-scrollbar"
+        className="gap-6 flex py-4 px-2  overflow-x-auto scroll-smooth no-scrollbar"
         ref={scrollRef}
       >
         {websiteTypes.map((type, index) => (
           <div
             key={index}
-            className="border-t-4 sm:min-w-[30%] py-4 min-w-[90%] border-orange-500 hover:scale-105 transition duration-500 px-6 pt-12 rounded-md bg-zinc-800"
+            className="border-t-4 sm:min-w-[30%] h-133 py-4 min-w-[90%] border-orange-500 hover:scale-105 transition duration-500 px-6 pt-12 rounded-md bg-zinc-800"
           >
-            <div className="mb-3 text-xl font-bold">{type.title}</div>
-            <div className="grid grid-cols-1  gap-1 mb-5 pt-3">
-              {type.features.map((f, i) => (
-                <div
-                  key={i}
-                  className="flex items-center text-sm text-zinc-200 gap-2"
-                >
-                  {i + 1}. {f}
-                </div>
-              ))}
-            </div>{" "}
-            <button className="flex flex-row gap-2 text-sm mb-16 items-center text-white font-semibold ">
-              Sample section with images <IoIosArrowForward />
-            </button>
-            <div className="mb-1 text-sm text-zinc-400 max-w-[70%]">
+            <div className="min-h-[78%]">
+              <div className="mb-3 text-xl font-bold">{type.title}</div>
+              <div className="grid grid-cols-1  gap-1 mb-5 pt-3">
+                {type.features.map((f, i) => (
+                  <div
+                    key={i}
+                    className="flex items-center text-sm text-zinc-200 gap-2"
+                  >
+                    {i + 1}. {f}
+                  </div>
+                ))}
+              </div>{" "}
+              <button className="flex flex-row gap-2 text-sm mb-16 items-center text-white font-semibold ">
+                Sample section with images <IoIosArrowForward />
+              </button>
+            </div>
+            <div className="mb-5 text-sm text-zinc-400 max-w-[80%]">
               Best international examples - that we can recreate for you:
             </div>
-            <div className="grid grid-cols-3 gap-2 border-t border-zinc-600 pt-3">
+            <div className="flex flex-row items-center justify-around gap-2 border-t border-zinc-600 pt-3">
               {type.examples.map((ex, i) => (
-                <div key={i} className="flex items-center gap-2 text-sm sm:text-lg">
+                <div
+                  key={i}
+                  className="flex items-center gap-2 text-sm sm:text-lg"
+                >
                   <span className="text-white">{ex.icon}</span>
                   {ex.name}
                 </div>

@@ -10,23 +10,28 @@ const Footer = () => {
  
   return (
     <footer className="bg-black  text-white py-8">
-      <div className="container max-w-[90%] mx-auto px-6 sm:px-18 grid grid-cols-1 sm:grid-cols-3">
+      <div className=" flex max-w-[90%] mx-auto sm:px-6 px-2 py-8 justify-around flex-col sm:flex-row">
         <div>
-          <div className="text-3xl sm:text-4xl font-extrabold">
+          <div className="text-3xl sm:text-4xl font-bold">
             Do you like <br />
             what you see?
           </div>
           <div
             onClick={() => navigate("/contact")}
-            className="inline-flex w-auto mt-5 text-xs sm:text-xl py-2 px-5 sm:px-5 rounded-full font-primary font-semibold text-white border-amber-600 border-2 transition-all duration-300 ease-in-out hover:bg-gradient-to-r from-zinc-900 to-zinc-900 hover:from-yellow-500 hover:to-orange-600 hover:text-zinc-900 items-center gap-2"
+            className="w-max flex items-center sm:mt-5 mt-3 text-md sm:text-xl py-2 px-5 sm:px-5 rounded-full font-primary font-semibold text-white border-amber-600 border-2 transition-all duration-300 ease-in-out hover:bg-gradient-to-r from-zinc-900 to-zinc-900 hover:from-yellow-500 hover:to-orange-600 hover:text-zinc-900  gap-2"
           >
-            <TiArrowForward /> Start a Project
+            <TiArrowForward className="text-lg" /> Start a Project
           </div>
         </div>
         <div className="flex flex-col text-gray-400 sm:mx-10 mt-10 sm:mt-0">
           {/* Links Section */}
           <div className="mb-10">
             <ul className="flex flex-col text-sm space-y-3 sm:flex">
+              <li className='text-lg text-white text-semibold'>
+                
+                  Platforms
+                
+              </li>
               <li>
                 <a
                   href="#"
@@ -65,22 +70,6 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-
-          {/* Social Media Section */}
-          <div className="flex space-x-6">
-            <a href="#" className="text-2xl hover:text-lime-300">
-              <i className="fab fa-facebook-f"></i> {/* Facebook icon */}
-            </a>
-            <a href="#" className="text-2xl hover:text-lime-300">
-              <i className="fab fa-twitter"></i> {/* Twitter icon */}
-            </a>
-            <a href="#" className="text-2xl hover:text-lime-300">
-              <i className="fab fa-instagram"></i> {/* Instagram icon */}
-            </a>
-            <a href="#" className="text-2xl hover:text-lime-300">
-              <i className="fab fa-linkedin-in"></i> {/* LinkedIn icon */}
-            </a>
-          </div>
         </div>
 
         {/* Footer Bottom Section */}
@@ -90,7 +79,8 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row pt-40 justify-between items-center">
+
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row sm:pt-40 pt-10 justify-between items-center">
         <p className="text-gray-500 text-sm mb-4 md:mb-0">
           © {currentYear} WebVenture Inc. All rights reserved
         </p>

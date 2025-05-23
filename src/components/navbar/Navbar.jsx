@@ -4,11 +4,12 @@ import GreenButton from "./GreenButton";
 import { FaMagic } from "react-icons/fa";
 import { HiBars2 } from "react-icons/hi2";
 import { useNavigate } from "react-router-dom";
+import { MdOutlineArrowOutward } from "react-icons/md";
 
 const Navbar = () => {
   const { scrollY } = useScroll(); // Get scrollY position
   const smoothScrollY = useSpring(scrollY, { damping: 20, stiffness: 100 }); // Smooth animation
-  const [navBg, setNavBg] = useState("bg-black");
+  const [navBg, setNavBg] = useState("bg-zinc-900");
   const [logoTranslate, setLogoTranslate] = useState(0);
   const [buttonTranslate, setButtonTranslate] = useState(0);
   const [navWidth, setNavWidth] = useState("100%"); // Full width by default
@@ -68,9 +69,12 @@ const Navbar = () => {
       <motion.div transition={{ type: "spring", stiffness: 100, damping: 15 }}>
         <button
           onClick={() => navigate("/contact")}
-          className="bg-gradient-to-r hidden sm:block font-semibold cursor-pointer from-yellow-500 to-orange-600 py-2 px-5 rounded-full text-zinc-900  hover:from-zinc-900 hover:to-zinc-900 hover:text-white hover:border-amber-600 border-2 transition-all duration-300 ease-in-out"
+          className="bg-gradient-to-r hidden sm:block font-semibold cursor-pointer from-yellow-500 to-orange-600 py-3 px-6 rounded-full text-zinc-900  hover:from-zinc-900 hover:to-zinc-900 hover:text-white hover:border-amber-600 border-2 transition-all duration-300 ease-in-out"
         >
-          Contact us
+          <div className="flex items-center gap-2">
+
+          Contact us <MdOutlineArrowOutward className="text-lg"/>
+          </div>
         </button>
       </motion.div>
 

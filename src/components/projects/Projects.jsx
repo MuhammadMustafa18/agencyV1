@@ -3,6 +3,7 @@ import { LuDot } from "react-icons/lu";
 import GreenButton from "../navbar/GreenButton";
 import ep from "../../assets/ep.png";
 import epAdmin from "../../assets/epAdmin.png";
+import { MdOutlineArrowOutward } from "react-icons/md";
 
 const projects = [
   {
@@ -33,30 +34,30 @@ const ProjectsSection = () => {
     <section className="max-w-full mx-0 sm:px-20 py-18 px-6">
       <div className="flex flex-col text-white mb-6 items-center">
         <div className="flex flex-row">
-          <div className="text-6xl text-center font-semibold">
+          <div className="text-7xl text-center font-display">
             Our Portfolio{" "}
           </div>
         </div>
-        <div className="text-xl mb-5 mt-3 text-zinc-200">
+        <div className="text-xl mb-5 mt-3 text-zinc-300">
           Recent and best projects{" "}
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {projects.map((project) => (
-          <div key={project.id} className="rounded-2xl shadow-lg">
+          <div key={project.id} className="rounded-2xl sm:h-120 shadow-lg">
             <img
               src={project.image}
               alt={project.title}
-              className="w-full h-auto object-cover rounded-xl"
+              className="w-full sm:min-h-80 object-cover rounded-xl"
             />
-            <div className="flex flex-row items-center mt-3">
+            <div className="flex flex-row items-center mt-3 sm:h-[10%]">
               <div className="text-md text-gray-300">{project.when}</div>
               <div className="ml-4 flex text-gray-300 flex-row items-center">
                 <LuDot size={24} />
                 <h3 className="text-md  font-semibold">{project.title}</h3>
               </div>
             </div>
-            <p className="text-white mt-2 text-xl font-semibold">
+            <p className="text-white mt-2 text-xl sm:h-[20%] font-semibold">
               {project.description}
             </p>
 
@@ -71,20 +72,15 @@ const ProjectsSection = () => {
                 </span>
               ))}
             </div>
-            <div className="mt-3 w-max text-sm text-black bg-gradient-to-r font-semibold from-yellow-500 to-orange-600 px-4 py-2 hover:from-zinc-900 hover:to-zinc-900 hover:text-white border transition duration-200 rounded-full hover:border-amber-600">
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+            <div className="mt-3 flex flex-row items-center gap-2 w-max text-sm text-black bg-gradient-to-r font-semibold from-yellow-500 to-orange-600 px-4 py-2 hover:from-zinc-900 hover:to-zinc-900 hover:text-white border transition duration-200 rounded-full hover:border-amber-600">
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
                 View Project
               </a>
-
+              <MdOutlineArrowOutward />
             </div>
           </div>
         ))}
       </div>
-      
     </section>
   );
 };
