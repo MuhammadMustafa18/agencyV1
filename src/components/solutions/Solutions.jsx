@@ -155,7 +155,7 @@ const Solutions = () => {
             <div className="mb-5 text-sm text-zinc-400 max-w-[80%]">
               Best international examples - that we can recreate for you:
             </div>
-            <div className="flex flex-row items-center justify-around gap-2 border-t border-zinc-600 pt-3">
+            <div className="flex flex-row items-center justify-around gap-2 border-t min-h-[10%] border-zinc-600 pt-3">
               {type.examples.map((ex, i) => (
                 <div
                   key={i}
