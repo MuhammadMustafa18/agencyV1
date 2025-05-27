@@ -27,11 +27,7 @@ const Footer = () => {
           {/* Links Section */}
           <div className="mb-10">
             <ul className="flex flex-col text-sm space-y-3 sm:flex">
-              <li className='text-lg text-white text-semibold'>
-                
-                  Platforms
-                
-              </li>
+              <li className="text-lg text-white text-semibold">Platforms</li>
               <li>
                 <a
                   href="#"
@@ -79,7 +75,6 @@ const Footer = () => {
           </p>
         </div>
       </div>
-
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row sm:pt-40 pt-10 justify-between items-center">
         <p className="text-gray-500 text-sm mb-4 md:mb-0">
           © {currentYear} WebVenture Inc. All rights reserved

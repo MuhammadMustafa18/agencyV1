@@ -1,15 +1,14 @@
 import React from 'react'
 import { useNavigate } from "react-router-dom";
+import ScrollAnim from './ScrollAnim';
 
 const AppBox = () => {
   const navigate = useNavigate();
 
   return (
     <div className="h-screen flex flex-col justify-center">
-      <div className="mt-4 flex flex-col min-h-[60%] justify-center items-center">
-        <h2 className="sm:text-5xl text-4xl font-bold text-center text-white mt-20 px-2 sm:mb-5 mb-3">
-          Have something unique in mind?
-        </h2>
+      <div className="mt-4 flex flex-col min-h-[60%] justify-center text-white items-center">
+        <ScrollAnim />
 
         <button
           onClick={() => navigate("/contact")}
