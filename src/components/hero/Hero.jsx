@@ -2,7 +2,6 @@ import React from "react";
 import { LuDot } from "react-icons/lu";
 import GreenButton from "../navbar/GreenButton";
 import RotatingText from "./RotatingText";
-import video from "../../assets/EventPlanner.mp4"
 const Hero = () => {
   return (
     <div className="w-full px-4 sm:px-20 pt-28 h-auto sm:pt-20">
@@ -38,16 +37,16 @@ const Hero = () => {
       <div className="text-lg sm:text-xl text-white text-center mt-4 sm:mt-5">
         Built for clarity, speed, and growth.
       </div>
-      <video
-        className="w-full h-full object-cover z-0 py-5"
-        autoPlay
-        loop
-        muted
-        playsInline
-      >
-        <source src={video} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <div className="aspect-video w-full">
+        <iframe
+          src="https://www.youtube.com/embed/q1kPVtYjPFM"
+          title="Event Planner Video"
+          frameBorder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          className="w-full h-full mt-5"
+        ></iframe>
+      </div>
 
       {/* Overlay */}
     </div>
