@@ -206,8 +206,8 @@ const Request = () => {
           ))}
         </div>
       )}
-      <div className='text-center text-4xl font-display'>Featured Designs</div>
-      <div className='text-center text-sm text-zinc-300 mb-5'>That we can recreate for you</div>
+      <div className='text-center sm:text-6xl text-4xl font-display'>Featured Designs</div>
+      <div className='text-center text-lg text-zinc-400 mb-5'>That we can recreate for you</div>
       <div style={{ height: "600px", position: "relative" }}>
         <InfiniteMenu items={items} />
       </div>

@@ -1177,7 +1177,7 @@ export default function InfiniteMenu({ items = [] }) {
   };
 
   return (
-    <div className="relative w-full h-full">
+    <div className="relative w-full sm:h-full h-2/3">
       <canvas
         id="infinite-grid-menu-canvas"
         ref={canvasRef}
@@ -1192,14 +1192,18 @@ export default function InfiniteMenu({ items = [] }) {
           select-none
           absolute
           font-black
-          text-5xl
+          sm:text-5xl
+          text-6xl
           font-display
-          left-[1.6em]
-          top-1/2
+          sm:left-[1.6em]
+          left-1/2
+          sm:top-1/2
+          top-1/5
           sm:block
-          hidden
+        text-center
           transform
-          translate-x-[20%]
+          sm:translate-x-[20%]
+          -translate-x-1/2
           -translate-y-1/2
           transition-all
           ease-[cubic-bezier(0.25,0.1,0.25,1.0)]
@@ -1258,7 +1262,7 @@ export default function InfiniteMenu({ items = [] }) {
           ${
             isMoving
               ? "bottom-[-80px] opacity-0 pointer-events-none duration-[100ms] scale-0 -translate-x-1/2"
-              : "bottom-[3.8em] opacity-100 pointer-events-auto duration-[500ms] scale-100 -translate-x-1/2"
+              : "sm:bottom-[3.8em] bottom-[0.8em] opacity-100 pointer-events-auto duration-[500ms] scale-100 -translate-x-1/2"
           }
         `}
           >
