@@ -10,7 +10,15 @@ const Footer = () => {
  
   return (
     <footer className="bg-black  text-white py-8">
-      <div className=" flex max-w-[90%] mx-auto sm:px-6 px-2 py-8 justify-around flex-col sm:flex-row">
+      <div className=" flex sm:mx-14 mx-5 sm:px-6 px-2 py-8 justify-between flex-col sm:flex-row">
+        <div className=" flex flex-col sm:max-w-1/4 gap-y-3">
+          <div className="text-3xl sm:text-4xl font-bold">WebVenture</div>
+          <div className='text-sm'>
+            WebVenture is a Pakistani UI/UX design agency that boosts brand value
+            with user-friendly, effective designs for web, mobile, and SaaS
+            platforms.
+          </div>
+        </div>
         <div>
           <div className="text-3xl sm:text-4xl font-bold">
             Do you like <br />

@@ -42,18 +42,28 @@ function ScrollAnim() {
 
   return (
     <div className="h-auto sm:p-10 p-5 flex w-full flex-col">
-      <div className="flex w-full justify-start  ">
-        <div ref={boxRef1} className="w-max font-bold sm:text-8xl text-4xl px-2">
+      <div className="sm:flex hidden w-full justify-start  ">
+        <div
+          ref={boxRef1}
+          className="w-max  font-bold sm:text-8xl text-3xl px-2"
+        >
           Have Something
         </div>
       </div>
-      <div className="flex w-full justify-end ">
+      <div className="sm:flex hidden w-full justify-end ">
         <div
           ref={boxRef2}
-          className="w-max font-bold sm:text-8xl text-4xl  px-2"
+          className="w-max   font-bold sm:text-8xl text-3xl  px-2"
         >
           Unique In Mind?{" "}
         </div>
+      </div>
+
+      <div className="flex sm:hidden w-full justify-center ">
+        <div className="w-max  font-bold  text-4xl px-2">Have Something</div>
+      </div>
+      <div className="flex sm:hidden w-full justify-center">
+        <div className="w-max  font-bold text-4xl  px-2">Unique In Mind? </div>
       </div>
     </div>
   );

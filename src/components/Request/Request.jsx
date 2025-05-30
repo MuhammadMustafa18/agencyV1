@@ -4,6 +4,51 @@ import { RiMessage2Fill } from "react-icons/ri";
 import { db } from "../../firebase/firebaseConfig"; // Make sure this path is correct
 import { collection, addDoc, Timestamp } from "firebase/firestore";
 import { filter } from 'framer-motion/client';
+import InfiniteMenu from "./InfiniteMenu";
+import corporate from "../../assets/corporate.png"
+import roofing from "../../assets/roofing.jpg";
+import realestate from "../../assets/realestate.png";
+import ep from "../../assets/ep.jpg";
+import ecom from "../../assets/ecom.jpg";
+
+const items = [
+  {
+    image: corporate,
+    link: "https://www.coachable.dev/",
+    title: "Corporate",
+    description:
+      "Modern, responsive corporate website with a clean layout and professional branding.",
+  },
+  {
+    image: roofing,
+    link: "https://3degreesinc.com/",
+    title: "Roofing",
+    description:
+      "Lead-generation focused roofing website with contact forms and a clean, trustworthy design.",
+  },
+  {
+    image: realestate,
+    link: "https://maximusmaximise.com/",
+    title: "Real Estate",
+    description:
+      "Elegant real estate website showcasing property listings with intuitive navigation.",
+  },
+  {
+    image: ep,
+    link: "https://google.com/",
+    title: "Event Planners",
+    description:
+      "Stylish and dynamic website tailored for event planning businesses with service highlights.",
+  },
+  {
+    image: ecom,
+    link: "https://google.com/",
+    title: "Ecommerce",
+    description:
+      "Functional eCommerce website with product showcases, cart integration, and user-friendly design.",
+  },
+];
+
 const suggestions = [
   "Website design for small business",
   "E-commerce platform development",
@@ -69,7 +114,7 @@ const Request = () => {
 
     } 
   return (
-    <div className="text-white bg-zinc-900 h-screen px-4 mt-20 py-20 sm:px-20">
+    <div className="text-white bg-zinc-900 h-full px-4 mt-20 py-20 sm:px-20">
       <div className="sm:text-5xl text-2xl text-center font-bold sm:mb-0 mb-5">
         Let's build something for your business.
       </div>
@@ -161,6 +206,11 @@ const Request = () => {
           ))}
         </div>
       )}
+      <div className='text-center text-4xl font-display'>Featured Designs</div>
+      <div className='text-center text-sm text-zinc-300 mb-5'>That we can recreate for you</div>
+      <div style={{ height: "600px", position: "relative" }}>
+        <InfiniteMenu items={items} />
+      </div>
     </div>
   );
 }

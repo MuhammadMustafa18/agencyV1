@@ -134,7 +134,7 @@ const Solutions = () => {
         {websiteTypes.map((type, index) => (
           <div
             key={index}
-            className="border-t-4 sm:min-w-[30%] h-133 py-4 min-w-[90%] border-orange-500 hover:scale-105 transition duration-500 px-6 pt-12 rounded-md bg-zinc-800"
+            className="border-t-4 sm:min-w-[30%] h-140 py-4 min-w-[90%] border-orange-500 hover:scale-105 transition duration-500 px-6 pt-12 rounded-md bg-zinc-800"
           >
             <div className="min-h-[78%]">
               <div className="mb-3 text-xl font-bold">{type.title}</div>
@@ -155,11 +155,11 @@ const Solutions = () => {
             <div className="mb-5 text-sm text-zinc-400 max-w-[80%]">
               Best international examples - that we can recreate for you:
             </div>
-            <div className="flex flex-row items-center justify-around gap-2 border-t min-h-[10%] border-zinc-600 pt-3">
+            <div className="flex flex-row items-center justify-around gap-2 border-t min-h-[5%]   border-zinc-600 pt-3">
               {type.examples.map((ex, i) => (
                 <div
                   key={i}
-                  className="flex items-center gap-2 text-sm sm:text-lg"
+                  className="flex items-center gap-2 text-xs sm:text-lg"
                 >
                   <span className="text-white">{ex.icon}</span>
                   {ex.name}

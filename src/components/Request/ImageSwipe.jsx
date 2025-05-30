@@ -12,7 +12,7 @@ const ImageSwipe = ({ images = [], className = "" }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 10000);
+    }, 100000);
     return () => clearInterval(interval); // clean up on unmount
   }, [images.length]);
   const handlers = useSwipeable({
